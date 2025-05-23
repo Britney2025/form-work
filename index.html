@@ -6,35 +6,58 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>PERSONAL INFORMATION</h1>
-        <form action="submitform" method="post">
+
+       
+    <div>
+<form action="/submit" method="post"> 
+    <h2>Join our community</h2>
+        <fieldset>
+            <legend>Personal information</legend>
             <label for="fname">First name:</label>
-            <input type="text" name="name" required>
-            <label for="mname">Middle name:</label>
-            <input type="text" name="name" required>
-            <label for="lname">Last name:</label>
-            <input type="text" name="name"><br>
-
-            <label>Date of birth:</label>
-            <input type="date" name="date"><br>
-
-            <label for="gender">Gender:</label>
-            <input type="checkbox" name="gender">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" value="male">
             <label for="gender">Female</label>
-            <input type="checkbox" name="gender">
-            <label for="gender">Male</label><br>
+            <input type="radio" name="gender" value="female">
+        </fieldset>
+        <h2>Region selection</h2>
+        <label for="region">Select your region:</label>
+        <select name="region" id="region">
+            <option value="nairobi">Nairobi</option>
+            <option value="kisumu">Kisumu</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="kamega">Kakamega</option>
+        </select>
+        <h2>Hobbies</h2>
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50">
+        <!--Color picker-->
+        <label for="color">Choose a color</label>
+        <input type="color" id="color" name="color">
+        <!--Date picker-->
+        <label for="date">Date of birth</label>
+        <input type="date" id="dob" name="dob">
+        <input type="submit" value="submit">
 
-            <label for="email">Email address:</label>
-            <input type="email" name="email" required><br>
+    </form>
+</div>
+<!--Embeding images-->
+<img src="/images/pexels-betulbatmaz-32172874.jpg" alt="photo.jpg" width="100px" height="100px">
 
-            <label for="phonenumber">Phone number:</label>
-            <input type="number" name="phonenumber" required><br>
-            
-            <label for="password">Password:</label>
-            <input type="password" name="password" required>
-        </form>
-    </header>
+<!--Embeding videos-->
+<video controls width="500" poster="thumbnail.jpg.">
+    <source src="" type="video/mp4">
+    Your browser doesn't support this audio
+</video>
+<!--Embeding audio-->
+<audio controls width>
+    <source src="" type="mp3">
+
+</audio>
+
+
+
+    
+
     
 </body>
 </html>
